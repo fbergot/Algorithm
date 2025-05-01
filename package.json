@@ -1,0 +1,25 @@
+{
+  "name": "algorithm-search",
+  "version": "1.0.0",
+  "description": "Allow searching for elements in lists with performance using efficient search algorithms",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "keywords": [
+    "algorithms",
+    "search",
+    "with",
+    "performance",
+    "search",
+    "performance"
+  ],
+  "author": "florian.bergot564@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^9.25.1",
+    "jest": "^29.7.0",
+    "prettier": "^3.5.3"
+  }
+}
