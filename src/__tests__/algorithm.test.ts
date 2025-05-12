@@ -61,7 +61,12 @@ describe("Algorithm.binarySearch", () => {
         ).toBe(0);
     });
 
-    test("should find the element with binarySearchByValue", () => {
+    test("should find last the element with binarySearchByValue", () => {
+        const list = [1, 2, 3, 4, 5];
+        expect(Algorithm.binarySearchByValue(list, 5)).toBe(4);
+    });
+
+    test("should find the first element with binarySearchByValue", () => {
         const list = [1, 2, 3, 4, 5];
         expect(Algorithm.binarySearchByValue(list, 5)).toBe(4);
     });

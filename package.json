@@ -1,6 +1,6 @@
 {
     "name": "ts-binary-search-algo",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "An optimized implementation of binary search, quick sort ... algorithms in TypeScript",
     "main": "dist/index.js",
     "module": "dist/index.js",
