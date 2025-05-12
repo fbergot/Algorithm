@@ -53,13 +53,13 @@ console.log(simpleIndex); // Output: 4 (index of element 5)
 
 ## 📖 API Reference
 
-### `Algorithm.binarySearch<T>(sortedArrayOfNumbers, comparator)`
+### `Algorithm.binarySearch<T>(sortedArray, comparator)`
 
 Performs a binary search using a comparator function.
 
 #### Parameters:
 
-- `sortedArrayOfNumbers`: A sorted array of elements
+- `sortedArray`: A sorted array of elements
 - `comparator`: A function that takes an element and returns:
     - `0` when the element matches
     - `-1` when the element is less than the target
@@ -176,7 +176,7 @@ Binary search algorithm offers significant performance advantages over linear se
 
 ## 🧪 Testing
 
-This library includes comprehensive test coverage. To run the tests:
+This library includes comprehensive test coverage. To run the tests (from fork https://github.com/fbergot/Algorithm) :
 
 ```bash
 pnpm test

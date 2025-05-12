@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Initial release of the binary search algorithm implementation in TypeScript
-- Core functionality with `binarySearch` and `binarySearchByValue` methods
+- Core functionality with `binarySearch`
 - Comprehensive test suite covering various edge cases
 - Complete documentation with usage examples in README.md
 
@@ -26,7 +26,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Initial project structure
-- Binary search algorithm implementation
+- Add `binarySearchByValue` method
 - TypeScript configuration
 - Basic documentation
+
+## [1.0.11] - 2025-05-12
+
+### Added
+
+- Change name of parameters

@@ -1,19 +1,24 @@
-type SearchableArray<T> = T[];
+type SortedArray<T> = T[];
 type ComparatorFunction<T> = (element: T) => number;
 
 class Algorithm {
-    static binarySearch<T>(sortedArrayOfNumbers: SearchableArray<T>, comparator: ComparatorFunction<T>): number {
-        if (!sortedArrayOfNumbers.length) return -1;
+    /**
+     * @param sortedArray
+     * @param comparator
+     * @return {number}
+     */
+    static binarySearch<T>(sortedArray: SortedArray<T>, comparator: ComparatorFunction<T>): number {
+        if (!sortedArray.length) return -1;
 
         let indexMin = 0,
-            indexMax = sortedArrayOfNumbers.length - 1,
+            indexMax = sortedArray.length - 1,
             indexMid;
 
         while (indexMin <= indexMax) {
             indexMid = Math.floor((indexMin + indexMax) / 2);
 
-            if (comparator(sortedArrayOfNumbers[indexMid]) === 0) return indexMid;
-            else if (comparator(sortedArrayOfNumbers[indexMid]) < 0) indexMin = indexMid + 1;
+            if (comparator(sortedArray[indexMid]) === 0) return indexMid;
+            else if (comparator(sortedArray[indexMid]) < 0) indexMin = indexMid + 1;
             else indexMax = indexMid - 1;
         }
 
@@ -21,9 +26,11 @@ class Algorithm {
     }
 
     /**
-     * Original binary search for direct value comparison (for backward compatibility)
+     * @param sortedArray
+     * @param item
+     * @return {number}
      */
-    static binarySearchByValue<T>(sortedArray: SearchableArray<T>, item: T): number {
+    static binarySearchByValue<T>(sortedArray: SortedArray<T>, item: T): number {
         return this.binarySearch(sortedArray, (element) => {
             if (element === item) return 0;
             return element < item ? -1 : 1;
@@ -32,4 +39,4 @@ class Algorithm {
 }
 
 export default Algorithm;
-export { Algorithm, SearchableArray, ComparatorFunction };
+export { Algorithm, SortedArray, ComparatorFunction };
